@@ -16,14 +16,16 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+//HOME
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-
+//CONTACT US
 Route::get('/contact', 'ContactController@index')->name('contact');
+Route::post('/contact/send', 'ContactController@store')->name('contact.store');
 
-
+//SERVICES
 Route::get('/services', 'ServicesController@index')->name('services');
 
+//ABOUT
 Route::get('/about', 'AboutController@index')->name('about');
