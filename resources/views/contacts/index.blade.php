@@ -13,11 +13,12 @@
                        </div>
                     </div>
                 </div>
+                @include('partials.message')
                 <div class="row wow fadeInUp" data-wow-delay="0.4s">
                     <div class="col-md-8 col-sm-12 col-xs-12">
                           <div class="contact-form">
-                            <form id="contact-form" method="post" action="contact.php" role="form">
-
+                            <form  method="post" action="{{ route('contact.store') }}" role="form">
+                                  @csrf
                                 <div class="messages"></div>
 
                                 <div class="controls">
