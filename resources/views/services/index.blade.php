@@ -11,8 +11,6 @@
     </div>
 </div>
 <!--======================End of Cover Header==============-->
-
-
     {{--  Services Container  --}}
 
     <!--================== SERVICES SECTION ====================-->
@@ -25,7 +23,6 @@
                    </div>
                </div>
            </div>
-
           <div class="row">
                 <div class="col-md-12">
                     <div class="testimonial-list">
@@ -48,8 +45,8 @@
                                         </div>
                                     </div>
                                     </div>
-                    </div>
-                    <div class="">
+                       </div>
+                        <div class="">
                             <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
                                     <a href="#"><img alt="images" src="{{ asset('images/test.jpg') }}"></a>
                                     <div class="single_bloG_item_content para_default">
@@ -58,8 +55,8 @@
                                     </div>
                                 </div>
                                 </div>
-                </div>
-                <div class="">
+                       </div>
+                       <div class="">
                         <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
                                 <a href="#"><img alt="images" src="{{ asset('images/test.jpg') }}"></a>
                                 <div class="single_bloG_item_content para_default">
@@ -68,9 +65,9 @@
                                 </div>
                             </div>
                             </div>
-            </div>
-            <div class="">
-                    <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
+                        </div>
+                        <div class="">
+                        <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
                             <a href="#"><img alt="images" src="{{ asset('images/test.jpg') }}"></a>
                             <div class="single_bloG_item_content para_default">
                                 <h3>Self Motivation</h3>
@@ -78,7 +75,7 @@
                             </div>
                         </div>
                         </div>
-        </div>
+                       </div>
                     </div>
                 </div>
             </div> <!-- / row -->
