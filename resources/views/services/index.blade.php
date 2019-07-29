@@ -2,59 +2,39 @@
 @section('content')
 @include('layouts.header')
 
+
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+
         <!--================= SERVICES SECTION ==============-->
         <section id="services" class="services-section scontactection-padding">
             <div class="container">
-               <div class="row">
-                   <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                      <div class="section-title">
-                       <h2>what i do.</h2>
-                       </div>
-                   </div>
-               </div>
+                <br>
+                <br>
+                <br>
+                <br>
 
                 <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="single-service text-center">
-                            <div class="servise-icon theme-color">
-                                <i class="fa fa-code"></i>
+                    @forelse($services as $service)
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-service text-center">
+                                <div class="servise-icon theme-color">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>{!! $service->title !!}</h4>
+                                <p>{!!  substr(strip_tags($service->content), 0, 50) !!}...</p>
                             </div>
-                            <h4>web design</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                         </div>
-                    </div>
+                    @empty
+                        <h2>No service at the moment.</h2>
+                    @endforelse
 
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="single-service text-center">
-                            <div class="servise-icon theme-color">
-                                <i class="fa fa-wordpress"></i>
-                            </div>
-                            <h4>development</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                        </div>
-                    </div>
 
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="single-service text-center">
-                            <div class="servise-icon theme-color">
-                                <i class="fa fa-pencil-square"></i>
-                            </div>
-                            <h4>Graphic design</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="single-service text-center">
-                            <div class="servise-icon theme-color">
-                                <i class="fa fa-laptop"></i>
-                            </div>
-                            <h4>UI/UX DESIGN</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                        </div>
-                    </div>
-
-                </div>
+                </div><br><br>
 
             </div><!--/.container-->
         </section>
