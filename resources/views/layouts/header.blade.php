@@ -20,9 +20,9 @@
                            <nav class="main-menu">
                             <div class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav"> <!--== manin menu ==-->
-                                    <li class="active smooth-scroll"><a class="theme-color" href="#home">Home</a></li>
+                                    <li class="active smooth-scroll"><a class="theme-color" href="/">Home</a></li>
                                     <li class="smooth-scroll"><a class="theme-color" href="{{ route('services.index') }}">Services</a></li>
-                                    <li class="smooth-scroll"><a class="theme-color" href="#services">Media</a></li>
+                                    <li class="smooth-scroll"><a class="theme-color" href="{{ route('media') }}">Media</a></li>
                                     <li class="smooth-scroll"><a class="theme-color" href="{{ route('about') }}">About</a></li>
                                     <li class="smooth-scroll"><a class="theme-color" href="{{ route('contact') }}">Contact</a></li>
                                 </ul>

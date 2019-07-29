@@ -5,16 +5,13 @@
 
 
 <!--======================Cover Header==============-->
-<div class="mod-homepage-feature">
-  <div id="home_feature" class="ft_left">
-    <div class="hf_img_holder" style="background-image:url(http://rel.resultspw.com/images/medium-hero.jpg);"></div>
-    <div class="container">
-      <div id="feature_text" class="ft_left">
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-        <a class="btn learn" href="/">Contact Us</a>
-      </div>
+<div class="cover" style="background-image: url('http://rel.resultspw.com/images/medium-hero.jpg');">
+    <div class="cover-content">
+        <h3 class="title">
+           Contact us
+        </h3>
+        <div class="subtitle">Look at how he moves. How he shakes his cute little bum in the water as he fluffs himself. Look at it!</div>
     </div>
-  </div>
 </div>
 <!--======================End of Cover Header==============-->
          <!--================ CONTACT INFO SECTION =================-->
@@ -24,7 +21,6 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                       <div class="section-title">
                        <h2>contact.</h2>
-                       <p>lets work together projects and just send me email here</p>
                        </div>
                     </div>
                 </div>
@@ -77,10 +73,10 @@
                                 <p class="phone">Phone: <a href="tel:+444123456">+44 4123456</a></p>
                             </div>
                             <div class="contact-padding col-md-12">
-                                <p class="mail">Email: <a href="mailto:willey@yourdomain.com">mail@yourdomain.com</a></p>
+                                <p class="mail">Email: <a href="mailto:info@qfc.com">info@qfc.com</a></p>
                             </div>
                             <div class="contact-padding col-md-12">
-                                <p class="adress">Address: Bak-One Company<br>12345 Hollywood Bvld Street<br> Los Angeles, California</p>
+                                <p class="adress">Address: QFC Corp<br>62157-00200 T-MALL Langata Road Nairobi, Kenya</p>
                             </div>
                         </div>
                     </div>

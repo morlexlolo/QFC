@@ -89,56 +89,21 @@
           <div class="row">
                 <div class="col-md-12">
                     <div class="testimonial-list">
-                        <div class="">
-                                    <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
-                                            <a href="#"><img alt="images" src="{{ asset('images/test.jpg') }}"></a>
-                                            <div class="single_bloG_item_content para_default">
-                                                <h3>Self Motivation</h3>
-                                                <p>The shore hat this group would how form a family right.</p>
-                                            </div>
-                                        </div>
-                                        </div>
-                        </div>
-                        <div class="">
-                                <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
-                                        <a href="#"><img alt="images" src="{{ asset('images/test.jpg') }}"></a>
+                        @forelse($services as $service)
+                            <div class="">
+                                <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
+                                    <div class="single_blog_item_div image_fulwidth text-center">
+                                        <a href="{{ route('services.show',$service->slug) }}"><img alt="{{ $service->title }}" src="{{ Voyager::image( $service->image)}}"></a>
                                         <div class="single_bloG_item_content para_default">
-                                            <h3>Self Motivation</h3>
+                                            <a href="{{ route('services.show',$service->slug) }}"><h3>{{ $service->title }}</h3></a>
                                             <p>The shore hat this group would how form a family right.</p>
                                         </div>
                                     </div>
-                                    </div>
-                    </div>
-                    <div class="">
-                            <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
-                                    <a href="#"><img alt="images" src="{{ asset('images/test.jpg') }}"></a>
-                                    <div class="single_bloG_item_content para_default">
-                                        <h3>Self Motivation</h3>
-                                        <p>The shore hat this group would how form a family right.</p>
-                                    </div>
-                                </div>
-                                </div>
-                </div>
-                <div class="">
-                        <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
-                                <a href="#"><img alt="images" src="{{ asset('images/test.jpg') }}"></a>
-                                <div class="single_bloG_item_content para_default">
-                                    <h3>Self Motivation</h3>
-                                    <p>The shore hat this group would how form a family right.</p>
                                 </div>
                             </div>
-                            </div>
-            </div>
-            <div class="">
-                    <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
-                            <a href="#"><img alt="images" src="{{ asset('images/test.jpg') }}"></a>
-                            <div class="single_bloG_item_content para_default">
-                                <h3>Self Motivation</h3>
-                                <p>The shore hat this group would how form a family right.</p>
-                            </div>
-                        </div>
-                        </div>
-        </div>
+                        @empty
+                            <h3>No service at the moment.</h3>
+                        @endforelse
                     </div>
                 </div>
             </div> <!-- / row -->

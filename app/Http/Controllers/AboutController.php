@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\About;
 
 class AboutController extends Controller
 {
@@ -10,6 +11,7 @@ class AboutController extends Controller
     public function index()
     {
         //
-        return view('about.index');
+        $abouts   = About::orderBy('title', 'asc')->get();
+        return view('about.index', compact('abouts'));
     }
 }
