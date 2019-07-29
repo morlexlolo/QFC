@@ -26,7 +26,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Name*" required="required" data-error="Name is required.">
+                                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Name*" data-error="Name is required.">
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
@@ -34,7 +34,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Email*" required="required" data-error="Valid email is required.">
+                                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Email*" data-error="Valid email is required.">
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
@@ -42,7 +42,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <textarea id="form_message" name="message" class="form-control" placeholder="Message*" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                                <textarea id="form_message" name="message" class="form-control" placeholder="Message*" rows="4" data-error="Please,leave us a message."></textarea>
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
