@@ -11,13 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Auth::routes();
 //HOME
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'WelcomeController@index')->name('welcome');
 
 
 //CONTACT US
@@ -27,10 +25,9 @@ Route::post('/contact/send', 'ContactController@store')->name('contact.store');
 //SERVICES
 Route::get('/services', 'ServiceController@index')->name('services.index');
 
-Route::get('/services/{service}', 'ServiceController@show')->name('services.show');
+Route::get('/services/{slug}', 'ServiceController@show')->name('services.show');
 
 
-//ABOUT
 Route::get('/about', 'AboutController@index')->name('about');
 
 Route::group(['prefix' => 'admin'], function () {

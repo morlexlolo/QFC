@@ -8,10 +8,10 @@
         <meta name="keywords" content="themefusionbd, resume, cv, portfolio, personal, developer, designer,personal resume, onepage, clean, modern">
         <meta name="author" content="Mahamudul Hasan">
 
-        <title>IDEA - Personal Portfolio Template</title>
+        <title>QFC</title>
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+        <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png">
 
         <!--==== CSS asset ====-->
         <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -23,8 +23,9 @@
 
         <!--==== CUSTOM CSS ====-->
         <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/theme/red.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/theme/blue.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
         <!--==== JQUERY ====-->
         <script src="assets/js/jquery-2.1.4.min.js"></script>
@@ -37,12 +38,12 @@
     </head>
 <body>
         <!--===== Preloader ====-->
-        <div class="preloader">
+        <!-- <div class="preloader">
             <div class="spinner">
               <div class="double-bounce1"></div>
               <div class="double-bounce2"></div>
             </div>
-        </div>
+        </div> -->
     <div id="app">
 
         <main >

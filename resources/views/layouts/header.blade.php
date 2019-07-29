@@ -12,7 +12,7 @@
                                         <span class="icon-bar"></span>
                                     </button>
                                 </div>
-                                <a href="index.html"><span class="theme-color">Id</span>ea</a> <!--== logo ==-->
+                                <a href="/"><span class="theme-color">QFC</span> Corp</a> <!--== logo ==-->
                             </div>
                         </div>
 

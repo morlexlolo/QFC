@@ -1,44 +1,56 @@
 @extends('layouts.app')
 @section('content')
 @include('layouts.header')
+<!--======================Cover Header==============-->
+<div class="mod-homepage-feature">
+  <div id="home_feature" class="ft_left">
+    <div class="hf_img_holder" style="background-image:url(http://rel.resultspw.com/images/medium-hero.jpg);"></div>
+    <div class="container">
+      <div id="feature_text" class="ft_left">
+        {{--  <h2>Services</h2>  --}}
+      </div>
+    </div>
+  </div>
+</div>
+<!--======================End of Cover Header==============-->
 
 
 
-                <br>
-                <br>
-                <br>
-                <br>
+    <!--================== TESTIMONIAL SECTION ====================-->
+    <div id="testimonial" class="testimonial-section section-padding">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-12 text-center">
+                    <div class="section-title">
+                        <h2>Our Services</h2>
+                   </div>
+                </div>
+            </div>
 
-
-        <!--================= SERVICES SECTION ==============-->
-        <section id="services" class="services-section scontactection-padding">
-            <div class="container">
-                <br>
-                <br>
-                <br>
-                <br>
-
-                <div class="row">
-                    @forelse($services as $service)
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="single-service text-center">
-                                <div class="servise-icon theme-color">
-                                    <i class="fa fa-code"></i>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testimonial-list">
+                        @forelse($services as $service)
+                            <div class="">
+                                <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
+                                    <div class="single_blog_item_div image_fulwidth text-center">
+                                        <a href="{{ route('services.show',$service->slug) }}"><img alt="{{ $service->title }}" src="{{ Voyager::image( $service->image)}}"></a>
+                                        <div class="single_bloG_item_content para_default">
+                                            <a href="{{ route('services.show',$service->slug) }}"><h3>{{ $service->title }}</h3></a>
+                                            <p>{!! str_limit($service->content,75) !!}</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <h4>{!! $service->title !!}</h4>
-                                <p>{!!  substr(strip_tags($service->content), 0, 50) !!}...</p>
                             </div>
-                        </div>
-                    @empty
-                        <h2>No service at the moment.</h2>
-                    @endforelse
-
-
-                </div><br><br>
-
-            </div><!--/.container-->
-        </section>
-        <!--=============== END SERVICES SECTION =================-->
+                        @empty
+                        <p>No service at the moment.</p>
+                        @endforelse
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--============== END TESTIMONIAL SECTION ===============-->
 
 @include('layouts.footer')
 @endsection
