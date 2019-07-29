@@ -2,124 +2,89 @@
 @section('content')
 @include('layouts.header')
 <!--======================Cover Header==============-->
-<div class="mod-homepage-feature">
-  <div id="home_feature" class="ft_left">
-    <div class="hf_img_holder" style="background-image:url(http://rel.resultspw.com/images/medium-hero.jpg);"></div>
-    <div class="container">
-      <div id="feature_text" class="ft_left">
-        {{--  <h2>Services</h2>  --}}
-      </div>
+<div class="cover" style="background-image: url('http://rel.resultspw.com/images/medium-hero.jpg');">
+    <div class="cover-content">
+        <h3 class="title">
+            Services
+        </h3>
+        <div class="subtitle">Look at how he moves. How he shakes his cute little bum in the water as he fluffs himself. Look at it!</div>
     </div>
-  </div>
 </div>
 <!--======================End of Cover Header==============-->
-<div class="container">
-    <div class="work-inner wow fadeInUp" data-wow-delay="0.4s">
-            <div class="row">
-                <div class="col-md-4 col-sm-6 single-work mix webdesign">
-                    <div class="full-work">
-                        <img src="assets/images/portfolio/item1.jpg" alt="">
-                            <div class="itemHover">
-                            <div class="work-table theme-color">
-                                <div class="table-cell">
-                                    <div class="hover-content">
-                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                       <a href="#" class="theme-color"><i class="fa fa-link"></i></a>
-                                        <a href="assets/images/portfolio/item1.jpg" class="image-popup theme-color"><i class="fa fa-search"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                    </div>
-                </div>
 
-                <div class="col-md-4 col-sm-6 single-work mix webdesign">
-                    <div class="full-work">
-                        <img src="assets/images/portfolio/item2.jpg" alt="">
-                            <div class="itemHover">
-                            <div class="work-table theme-color">
-                                <div class="table-cell">
-                                    <div class="hover-content">
-                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                       <a href="#" class="theme-color"><i class="fa fa-link"></i></a>
-                                        <a href="assets/images/portfolio/item2.jpg" class="image-popup theme-color"><i class="fa fa-search"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                    </div>
-                </div>
 
-                <div class="col-md-4 col-sm-6 single-work mix development">
-                    <div class="full-work">
-                        <img src="assets/images/portfolio/item3.jpg" alt="">
-                            <div class="itemHover">
-                            <div class="work-table theme-color">
-                                <div class="table-cell">
-                                    <div class="hover-content">
-                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                       <a href="#" class="theworkme-color"><i class="fa fa-link"></i></a>
-                                        <a href="assets/images/portfolio/item3.jpg" class="image-popup theme-color"><i class="fa fa-search"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                    </div>
-                </div>
+    {{--  Services Container  --}}
 
-                <div class="col-md-4 col-sm-6 single-work mix development">
-                    <div class="full-work">
-                        <img src="assets/images/portfolio/item4.jpg" alt="">
-                            <div class="itemHover">
-                            <div class="work-table theme-color">
-                                <div class="table-cell">
-                                    <div class="hover-content">
-                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                       <a href="#" class="theme-color"><i class="fa fa-link"></i></a>
-                                        <a href="assets/images/portfolio/item4.jpg" class="image-popup theme-color"><i class="fa fa-search"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                    </div>
-                </div>
+    <!--================== SERVICES SECTION ====================-->
+    <div id="testimonial" class="testimonial-section section-padding">
+        <div class="container">
+           <div class="row">
+               <div class="col-md-12 text-center">
+                  <div class="section-title">
+                   <h2>Our Services</h2>
+                   </div>
+               </div>
+           </div>
 
-                <div class="col-md-4 col-sm-6 single-work mix graphic">
-                    <div class="full-work">
-                        <img src="assets/images/portfolio/item5.jpg" alt="">
-                            <div class="itemHover">
-                            <div class="work-table theme-color">
-                                <div class="table-cell">
-                                    <div class="hover-content">content
-                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                       <a href="#" class="theme-color"><i class="fa fa-link"></i></a>
-                                        <a href="assets/images/portfolio/item5.jpg" class="image-popup theme-color"><i class="fa fa-search"></i></a>
+          <div class="row">
+                <div class="col-md-12">
+                    <div class="testimonial-list">
+                        <div class="">
+                                    <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
+                                            <a href="#"><img alt="images" src="{{ asset('images/test.jpg') }}"></a>
+                                            <div class="single_bloG_item_content para_default">
+                                                <h3>Self Motivation</h3>
+                                                <p>The shore hat this group would how form a family right.</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                        </div>
+                        <div class="">
+                                <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
+                                        <a href="#"><img alt="images" src="{{ asset('images/test.jpg') }}"></a>
+                                        <div class="single_bloG_item_content para_default">
+                                            <h3>Self Motivation</h3>
+                                            <p>The shore hat this group would how form a family right.</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                    </div>
+                    <div class="">
+                            <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
+                                    <a href="#"><img alt="images" src="{{ asset('images/test.jpg') }}"></a>
+                                    <div class="single_bloG_item_content para_default">
+                                        <h3>Self Motivation</h3>
+                                        <p>The shore hat this group would how form a family right.</p>
                                     </div>
                                 </div>
-                            </div>
-                          </div>
-                    </div>
+                                </div>
                 </div>
-                <div class="col-md-4 col-sm-6 single-work mix graphic">
-                    <div class="full-work">
-                        <img src="assets/images/portfolio/item6.jpg" alt="">
-                            <div class="itemHover">
-                            <div class="work-table theme-color">
-                                <div class="table-cell">
-                                    <div class="hover-content">
-                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                       <a href="#" class="theme-color"><i class="fa fa-link"></i></a>
-                                        <a href="assets/images/portfolio/item6.jpg" class="image-popup theme-color"><i class="fa fa-search"></i></a>
-                                    </div>
+                <div class="">
+                        <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
+                                <a href="#"><img alt="images" src="{{ asset('images/test.jpg') }}"></a>
+                                <div class="single_bloG_item_content para_default">
+                                    <h3>Self Motivation</h3>
+                                    <p>The shore hat this group would how form a family right.</p>
                                 </div>
                             </div>
-                          </div>
-                    </div>
-                </div>
-
-            </div><!--/.row-->
+                            </div>
             </div>
-</div>
+            <div class="">
+                    <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
+                            <a href="#"><img alt="images" src="{{ asset('images/test.jpg') }}"></a>
+                            <div class="single_bloG_item_content para_default">
+                                <h3>Self Motivation</h3>
+                                <p>The shore hat this group would how form a family right.</p>
+                            </div>
+                        </div>
+                        </div>
+        </div>
+                    </div>
+                </div>
+            </div> <!-- / row -->
+            </div>
+        </div>
+    <!--============== END SERVICES SECTION ===============-->
 
 @include('layouts.footer')
 @endsection
