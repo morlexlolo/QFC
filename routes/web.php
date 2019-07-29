@@ -11,13 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Auth::routes();
 //HOME
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'WelcomeController@index')->name('welcome');
 
 
 //CONTACT US
@@ -27,13 +25,8 @@ Route::post('/contact/send', 'ContactController@store')->name('contact.store');
 //SERVICES
 Route::get('/services', 'ServicesController@index')->name('services');
 
-<<<<<<< HEAD
 Route::get('/about', 'AboutController@index')->name('about');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
-=======
-//ABOUT
-Route::get('/about', 'AboutController@index')->name('about');
->>>>>>> 6b8cfb3b28d32e1770ed23ebbc29a1bbc8668d33

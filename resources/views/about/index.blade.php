@@ -2,6 +2,20 @@
 @section('content')
 @include('layouts.header')
 
+<!--======================Cover Header==============-->
+<div class="mod-homepage-feature">
+  <div id="home_feature" class="ft_left">
+    <div class="hf_img_holder" style="background-image:url(http://rel.resultspw.com/images/medium-hero.jpg);"></div>
+    <div class="container">
+      <div id="feature_text" class="ft_left">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+        <a style="background: #7C3273;" class="btn learn" href="/online/mobile_banking/">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--======================End of Cover Header==============-->
+
         <!--============= ABOUT SECTION =============-->
         <section id="about" class="about-section section-padding">
             <div class="container">
