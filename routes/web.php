@@ -24,6 +24,7 @@ Route::post('/contact/send', 'ContactController@store')->name('contact.store');
 
 //SERVICES
 Route::get('/services', 'ServicesController@index')->name('services');
+Route::get('/media', 'GalleryController@index')->name('media');
 
 Route::get('/about', 'AboutController@index')->name('about');
 

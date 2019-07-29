@@ -27,7 +27,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="img_about mt-3">
-                        <img src="https://i.ibb.co/qpz1hvM/About-us.jpg" alt="" class="img-fluid mx-auto d-block">
+                        <img src="{{ asset('/images/test.jpg') }}" alt="" class="img-fluid mx-auto d-block">
                     </div>
                 </div>
             </div>
