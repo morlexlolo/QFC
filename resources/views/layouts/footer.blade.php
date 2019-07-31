@@ -13,10 +13,12 @@
     <div class="ft-main-item">
       <h2 class="ft-title">Services</h2>
       <ul>
-        <li><a href="#">Docs</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">eBooks</a></li>
-        <li><a href="#">Webinars</a></li>
+
+        @forelse ($services as $item)
+             <li><a href="{{ route('services.show',$item->slug) }}">{{ $item->title }}</a></li>
+        @empty
+            <li><a href="#">Docs</a></li>
+        @endforelse
       </ul>
     </div>
     <div class="ft-main-item">

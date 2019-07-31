@@ -8,14 +8,13 @@
 <div class="cover" style="background-image: url('http://rel.resultspw.com/images/medium-hero.jpg');">
     <div class="cover-content">
         <h3 class="title">
-           Contact us
+            Contact us
         </h3>
-        <div class="subtitle">Look at how he moves. How he shakes his cute little bum in the water as he fluffs himself. Look at it!</div>
     </div>
 </div>
 <!--======================End of Cover Header==============-->
          <!--================ CONTACT INFO SECTION =================-->
-        <section id="contact" class="contact-info-section section-padding">
+        <section  class="contact-info-section section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">

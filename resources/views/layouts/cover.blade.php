@@ -11,7 +11,7 @@
                                     <div class="welcome-text">
                                         <h2><span class="bold">Quantum Financial</span> Invest Today</h2>
                                         <p>We are base in T-Mall Langata Road</p>
-                                        <a class="scroll-btn btn theme-color" href="#about">View Profile</a>
+                                        <a class="scroll-btn btn theme-color" href="#about">More About us</a>
                                     </div>
                                 </div>
                            </div><!--/.row-->

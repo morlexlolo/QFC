@@ -7,7 +7,6 @@
         <h3 class="title">
             Services
         </h3>
-        <div class="subtitle">Look at how he moves. How he shakes his cute little bum in the water as he fluffs himself. Look at it!</div>
     </div>
 </div>
 <!--======================End of Cover Header==============-->
@@ -35,7 +34,7 @@
                                         <a href="{{ route('services.show',$service->slug) }}"><img alt="{{ $service->title }}" src="{{ Voyager::image( $service->image)}}"></a>
                                         <div class="single_bloG_item_content para_default">
                                             <a href="{{ route('services.show',$service->slug) }}"><h3>{{ $service->title }}</h3></a>
-                                            <p>{!! str_limit($service->content,75) !!}</p>
+                                            <p> {!!  substr(strip_tags($service->content),0,120) !!}...</p>
                                         </div>
                                     </div>
                                 </div>
