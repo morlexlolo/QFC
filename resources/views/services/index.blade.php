@@ -11,77 +11,44 @@
     </div>
 </div>
 <!--======================End of Cover Header==============-->
-    {{--  Services Container  --}}
 
-    <!--================== SERVICES SECTION ====================-->
+
+
+    <!--================== TESTIMONIAL SECTION ====================-->
     <div id="testimonial" class="testimonial-section section-padding">
         <div class="container">
-           <div class="row">
+            <div class="row">
                <div class="col-md-12 text-center">
-                  <div class="section-title">
-                   <h2>Our Services</h2>
+                    <div class="section-title">
+                        <h2>Our Services</h2>
                    </div>
-               </div>
-           </div>
-          <div class="row">
+                </div>
+            </div>
+
+            <div class="row">
                 <div class="col-md-12">
                     <div class="testimonial-list">
-                        <div class="">
-                                    <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
-                                            <a href="#"><img alt="images" src="{{ asset('images/test.jpg') }}"></a>
-                                            <div class="single_bloG_item_content para_default">
-                                                <h3>Self Motivation</h3>
-                                                <p>The shore hat this group would how form a family right.</p>
-                                            </div>
-                                        </div>
-                                        </div>
-                        </div>
-                        <div class="">
-                                <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
-                                        <a href="#"><img alt="images" src="{{ asset('images/test.jpg') }}"></a>
+                        @forelse($services as $service)
+                            <div class="">
+                                <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
+                                    <div class="single_blog_item_div image_fulwidth text-center">
+                                        <a href="{{ route('services.show',$service->slug) }}"><img alt="{{ $service->title }}" src="{{ Voyager::image( $service->image)}}"></a>
                                         <div class="single_bloG_item_content para_default">
-                                            <h3>Self Motivation</h3>
-                                            <p>The shore hat this group would how form a family right.</p>
+                                            <a href="{{ route('services.show',$service->slug) }}"><h3>{{ $service->title }}</h3></a>
+                                            <p>{!! str_limit($service->content,75) !!}</p>
                                         </div>
                                     </div>
-                                    </div>
-                       </div>
-                        <div class="">
-                            <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
-                                    <a href="#"><img alt="images" src="{{ asset('images/test.jpg') }}"></a>
-                                    <div class="single_bloG_item_content para_default">
-                                        <h3>Self Motivation</h3>
-                                        <p>The shore hat this group would how form a family right.</p>
-                                    </div>
-                                </div>
-                                </div>
-                       </div>
-                       <div class="">
-                        <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
-                                <a href="#"><img alt="images" src="{{ asset('images/test.jpg') }}"></a>
-                                <div class="single_bloG_item_content para_default">
-                                    <h3>Self Motivation</h3>
-                                    <p>The shore hat this group would how form a family right.</p>
                                 </div>
                             </div>
-                            </div>
-                        </div>
-                        <div class="">
-                        <div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="single_blog_item_div image_fulwidth text-center">
-                            <a href="#"><img alt="images" src="{{ asset('images/test.jpg') }}"></a>
-                            <div class="single_bloG_item_content para_default">
-                                <h3>Self Motivation</h3>
-                                <p>The shore hat this group would how form a family right.</p>
-                            </div>
-                        </div>
-                        </div>
-                       </div>
+                        @empty
+                        <p>No service at the moment.</p>
+                        @endforelse
                     </div>
                 </div>
-            </div> <!-- / row -->
             </div>
         </div>
-    <!--============== END SERVICES SECTION ===============-->
+    </div>
+    <!--============== END TESTIMONIAL SECTION ===============-->
 
 @include('layouts.footer')
 @endsection

@@ -43,6 +43,20 @@ return [
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
 
+
+        'mysql' => array(
+        'driver'    => 'mysql',
+            'host'      => 'localhost',
+            'database'  => 'Qfc_db',
+            'unix_socket'   => '/Applications/MAMP/tmp/mysql/mysql.sock',
+            'username'  => 'root',
+            'password'  => '',
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+        ),
+
+
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
