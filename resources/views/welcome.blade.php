@@ -96,7 +96,7 @@
                                         <a href="{{ route('services.show',$service->slug) }}"><img alt="{{ $service->title }}" src="{{ Voyager::image( $service->image)}}"></a>
                                         <div class="single_bloG_item_content para_default">
                                             <a href="{{ route('services.show',$service->slug) }}"><h3>{{ $service->title }}</h3></a>
-                                            <p>The shore hat this group would how form a family right.</p>
+                                          <p> {!!  substr(strip_tags($service->content),0,120) !!}...</p>
                                         </div>
                                     </div>
                                 </div>
@@ -121,7 +121,7 @@
                         <div class="quotes-content text-center">
                            <h3>Well get in touch with you</h3>
                            <p>Let us choose the most suitable solution for you.</p>
-                            <a class="scroll-btn btn theme-color" href="">Contact us</a>
+                            <a class="scroll-btn btn theme-color" href="{{ route('contact') }}">Contact us</a>
                         </div>
                     </div>
                 </div><!--/.row-->

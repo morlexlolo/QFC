@@ -2,41 +2,50 @@
 @section('content')
 @include('layouts.header')
 <!--======================Cover Header==============-->
-<div class="mod-homepage-feature">
-  <div id="home_feature" class="ft_left">
-    <div class="hf_img_holder" style="background-image:url(http://rel.resultspw.com/images/medium-hero.jpg);"></div>
-    <div class="container">
-      <div id="feature_text" class="ft_left">
-        {{--  <h2>Services</h2>  --}}
-      </div>
+<div class="cover" style="background-image: url('{{ Voyager::image( $service->image)}}');">
+    <div class="cover-content">
+        <h3 class="title">
+            {{ $service->title }}
+        </h3>
     </div>
-  </div>
 </div>
 <!--======================End of Cover Header==============-->
 
+ <section  class="contact-info-section section-padding">
+            <div class="container">
+                <div class="row wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="full-adress">
+                            <h2>Our Services</h2>
+                                  <div class="contact-padding col-md-12">
+                                      <ul class="services-list">
+                                @forelse ($services as $item)
+                                <li>  <i class="fa fa-list-ul fa-lg" aria-hidden="true"></i>  <a href="{{ route('services.show',$item->slug) }}">{{ $item->title }}</a></li>
+                                @empty
 
-
-    <!--================== TESTIMONIAL SECTION ====================-->
-    <div id="testimonial" class="testimonial-section section-padding">
-        <div class="container">
-            <div class="row">
-               <div class="col-md-12 text-center">
-                    <div class="section-title">
-                        <h2>Our Services</h2>
-                   </div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            
-        </div>
-    </div>
-    <!--============== END TESTIMONIAL SECTION ===============-->
-
+                                @endforelse
+                                </ul>
+                                  </div>
+                        </div>
+                        <div class="full-adress">
+                            <h2>contact us</h2>
+                             <div class="contact-padding col-md-12">
+                                <p class="phone">Phone: <a href="tel:+444123456">+44 4123456</a></p>
+                            </div>
+                            <div class="contact-padding col-md-12">
+                                <p class="mail">Email: <a href="mailto:info@qfc.com">info@qfc.com</a></p>
+                            </div>
+                            <div class="contact-padding col-md-12">
+                                <p class="adress">Address: QFC Corp<br>62157-00200 T-MALL Langata Road Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                      <p>{!! $item->content !!}</p>
+                     </div>
+                 </div><!--/.row-->
+            </div><!--/.container-->
+        </section>
 @include('layouts.footer')
 @endsection
 
