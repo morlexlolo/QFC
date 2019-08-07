@@ -20,9 +20,9 @@
                                   <div class="contact-padding col-md-12">
                                       <ul class="services-list">
                                 @forelse ($services as $item)
-                                <li>  <i class="fa fa-list-ul fa-lg" aria-hidden="true"></i>  <a href="{{ route('services.show',$item->slug) }}">{{ $item->title }}</a></li>
+                                <li><a href="{{ route('services.show',$item->slug) }}">{{ $item->title }}</a></li>
                                 @empty
-
+                                <li>No services yet!</li>
                                 @endforelse
                                 </ul>
                                   </div>

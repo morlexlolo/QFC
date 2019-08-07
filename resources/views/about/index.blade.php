@@ -19,7 +19,7 @@
                     <div class="col-md-4">
                         <div class="author-image wow fadeInLeft" data-wow-delay="0.2s">
                             <img src="{{ Voyager::image( $ab->image)}}" alt="Author Image"> <!--=== author image ===-->
-                            <p>Johnathan Doe - <span class="theme-color">Web Developer</span></p>
+                            {{--  <p>Johnathan Doe - <span class="theme-color">Web Developer</span></p>  --}}
                         </div>
                     </div>
                     <div class="col-md-8">

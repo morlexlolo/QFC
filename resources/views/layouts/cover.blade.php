@@ -5,13 +5,14 @@
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
     </ol>
     <div class="carousel-inner">
-        <marquee>
+        <marquee scrollamount="10">
             <ul>
-                <li> JP/KES: <span>Buy:100</span>,<span>Sell:1.29.50</span></li>
-                <li> US/KES: <span>Buy:100</span>,<span>Sell:103.2</span></li>
-                <li> EU/KES: <span>Buy:100</span>,<span>Sell:106.5</span></li>
-                <li> JP/KES: <span>Buy:1000</span>,<span>Sell:1.29.50</span></li>
-                <li> JP/KES: <span>Buy:1000</span>,<span>Sell:1.29.50</span></li>
+               @forelse ($markets as $market)
+                <li>{{ $market->name1 }} / {{ $market->name2 }}: <span>Buy:{{ $market->buy }}</span> , <span>Sell:{{ $market->sell }}</span></li>
+               @empty
+                 <li>no record...</li>
+               @endforelse
+
             </ul>
        </marquee>
      @forelse ($sliders as $key => $slider)

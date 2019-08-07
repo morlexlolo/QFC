@@ -203,9 +203,10 @@ input:-webkit-autofill:focus {
     transition: all 0.4s ease-in-out;
 }
 
-.navbar-light .navbar-brand {
-    width: 100px;
-    max-height: 80px;
+.navbar-light .navbar-brand img {
+
+    max-height: 50px;
+    object-fit: cover;
 
 }
 
@@ -478,11 +479,20 @@ input:-webkit-autofill:focus {
     border-bottom: transparent 2px solid;
 }
 
-.services-list li:hover {
-    margin-top: 20px;
-    align-items: center;
+.services-list li a {
+    font-size: 18px;
+    font-weight: 800;
+    color: #666666;
+}
+
+.services-list li a:hover {
+    font-size: 18px;
+    font-weight: 800;
+    color: #00bd2a;
     transition: all 0.5s ease-in-out;
 }
+
+
 
 .complete_project_section {
     padding: 95px 0px 100px;
