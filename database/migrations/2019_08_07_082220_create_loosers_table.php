@@ -17,7 +17,7 @@ class CreateLoosersTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->integer('price');
-            $table->integer('percentage');
+            $table->decimal('percentage');
             $table->timestamps();
         });
     }

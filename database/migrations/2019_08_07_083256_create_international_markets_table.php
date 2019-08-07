@@ -17,6 +17,7 @@ class CreateInternationalMarketsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->integer('price');
+            $table->text('region');
             $table->timestamps();
         });
     }

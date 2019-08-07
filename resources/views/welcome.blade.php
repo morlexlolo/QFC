@@ -117,6 +117,7 @@
        </div>
   <div class="row">
     <div class="col-sm">
+      <caption>Local Markets</caption>
      <table class="table table-striped">
   <thead>
     <tr>
@@ -126,25 +127,20 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Mark</td>
-      <td>4.50</td>
-      <td><span class="badge badge-success">+ 5.16 </span> <i style="color:green" class="fa fa-angle-up fa-lg"></i></td>
-    </tr>
-    <tr>
-      <td>Jacob</td>
-      <td>30.0</td>
-      <td><span class="badge badge-success">+ 5.16 </span> <i style="color:green" class="fa fa-angle-up fa-lg"></i></td>
-    </tr>
-    <tr>
-      <td>Larry</td>
-      <td>2.75</td>
-      <td><span class="badge badge-success">+ 5.16 </span> <i style="color:green" class="fa fa-angle-up fa-lg"></i></td>
-    </tr>
+    @forelse($gainers as $gg)
+      <tr>
+        <td>{{ $gg->name }}</td>
+        <td>{{ $gg->price }}</td>
+        <td><span class="badge badge-success">+ {{ $gg->percentage}}</span> <i style="color:green" class="fa fa-angle-up fa-lg"></i></td>
+      </tr>
+     @empty
+    <p>No gainers at the moment.</p>
+    @endforelse
   </tbody>
 </table>
     </div>
     <div class="col-sm">
+      <caption>Local Markets</caption>
       <table class="table table-striped">
   <thead>
     <tr>
@@ -154,50 +150,39 @@
     </tr>
   </thead>
    <tbody>
+    @forelse($loosers as $ll)
     <tr>
-      <td>Mark</td>
-      <td>3.23</td>
-      <td><span class="badge badge-danger">- 3.46 </span> <i style="color:red" class="fa fa-angle-down fa-lg"></i></td>
+      <td>{{ $ll->name }}</td>
+      <td>{{ $ll->price }}</td>
+      <td><span class="badge badge-danger">- {{ $ll->percentage }} </span> <i style="color:red" class="fa fa-angle-down fa-lg"></i></td>
     </tr>
-    <tr>
-      <td>Jacob</td>
-      <td>3.05</td>
-      <td><span class="badge badge-danger">- 4.16 </span> <i style="color:red" class="fa fa-angle-down fa-lg"></i></td>
-    </tr>
-    <tr>
-      <td>Larry</td>
-      <td>2.05</td>
-      <td><span class="badge badge-danger">- 5.16 </span> <i style="color:red" class="fa fa-angle-down fa-lg"></i></td>
-    </tr>
+    @empty
+    <p>No loosers at the moment.</p>
+    @endforelse
   </tbody>
 </table>
     </div>
     <div class="col-sm">
+       <caption>International Markets</caption>
      <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Movers and Shakers</th>
+      <th scope="col">Price</th>
+      <th scope="col">Region</th>
     </tr>
   </thead>
   <tbody>
+    @forelse($international as $ii)
     <tr>
+      <td>{{ $ii->name }}</td>
+      <td>{{ $ii->price }}</td>
+      <td>{{ $ii->regions }}</td>
+    </tr>
 
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
+    @empty
+    <p>No international companies at the moment.</p>
+    @endforelse
   </tbody>
 </table>
     </div>
