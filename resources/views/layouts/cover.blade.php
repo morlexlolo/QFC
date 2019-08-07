@@ -5,7 +5,7 @@
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
     </ol>
     <div class="carousel-inner">
-        <marquee>
+        <marquee onMouseOver="this.stop()" onMouseOut="this.start()">
             <ul>
                 <li> JP/KES: <span>Buy:100</span>,<span>Sell:1.29.50</span></li>
                 <li> US/KES: <span>Buy:100</span>,<span>Sell:103.2</span></li>
@@ -14,6 +14,7 @@
                 <li> JP/KES: <span>Buy:1000</span>,<span>Sell:1.29.50</span></li>
             </ul>
        </marquee>
+      
      @forelse ($sliders as $key => $slider)
             <div class="carousel-item {{$key == 0 ? 'active' : '' }}">
         <img src="{{ Voyager::image( $slider->image)}}" class="d-block w-100" alt="...">
