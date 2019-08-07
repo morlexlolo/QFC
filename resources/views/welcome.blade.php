@@ -3,8 +3,6 @@
 @include('layouts.header')
 
 @include('layouts.cover')
-
-
 <section class="section_all bg-light" id="about">
         <div class="container">
                 <div class="row">
@@ -14,19 +12,19 @@
                             </div>
                         </div>
                 </div>
-            <div class="row vertical_content_manage mt-5">
+            <div class="row vertical_content_manage">
                 <div class="col-lg-6">
                     <div class="about_header_main mt-3">
-                        <div class="about_icon_box">
-                            <p class="text_custom font-weight-bold">Lorem Ipsum is simply dummy text</p>
-                        </div>
-                        <h4 class="about_heading text-capitalize font-weight-bold mt-4">Lorem Ipsum is simply dummy text of the printing industry.</h4>
-                        <p class="text-muted mt-3">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                        <p class="text-muted mt-3"> Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.</p>
+                        <p class="text-muted mt-3">Quantum Financials is a global leader in investment services, offering financial and investment solutions to both individuals and corporations across the globe. 
+                         Licensed by the Capital Markets Authority of Kenya as Financial and Investment Analysts, we have a great passion for finding lucrative investment opportunities where we have an unparalleled edge through a meticulously developed position of knowledge in all our active sectors and an uncanny ability to identify opportunity giving us first mover’s advantage.
+                         Our goal is to offer all our clients a transparent and collaborative approach to Investment that is founded on fidelity, prudence, mastery and rigorous execution of  our unique strategies with an aim not only limited to yield high-returns and risk managed deals but fosters our core value – TRUST.
+                         Our success has been bolstered by a well-respected track record that includes collaborations with global hedge funds therein offering an exceptional network of universal opportunities in our diverse investment portfolio.
+                        </p>
+
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="img_about mt-3">
+                    <div class="img_about ">
                         <img src="https://i.ibb.co/qpz1hvM/About-us.jpg" alt="" class="img-fluid mx-auto d-block">
                     </div>
                 </div>
@@ -34,13 +32,12 @@
 
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="about_content_box_all">
+                    <div class="about_content_box_all mt-3">
                         <div class="about_detail text-center">
                             <div class="about_icon">
                                 <i class="fa fa-certificate"></i>
                             </div>
-                            <h5 class="">Legitimate</h5>
-                            <p class="edu_desc mt-3 mb-0 text-muted">Licensed by the capital martkets authority of Kenya as Financial and Investment Analysts . </p>
+                            <h5 class="text-dark text-capitalize mt-3 font-weight-bold">Advanced Financial Planning</h5>
                         </div>
                     </div>
                 </div>
@@ -49,10 +46,9 @@
                     <div class="about_content_box_all mt-3">
                         <div class="about_detail text-center">
                             <div class="about_icon">
-                                    <i class="fa fa-address-card-o"></i>
+                                    <i class="fa fa-line-chart"></i>
                             </div>
-                            <h5 class="text-dark text-capitalize mt-3 font-weight-bold">We make Best Result</h5>
-                            <p class="edu_desc mb-0 mt-3 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <h5 class="text-dark text-capitalize mt-3 font-weight-bold">Robust investing</h5>
                         </div>
                     </div>
                 </div>
@@ -63,8 +59,7 @@
                             <div class="about_icon">
                                 <i class="fa fa-pie-chart"></i>
                             </div>
-                            <h5 class="text-dark text-capitalize mt-3 font-weight-bold">best platform </h5>
-                            <p class="edu_desc mb-0 mt-3 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <h5 class="text-dark text-capitalize mt-3 font-weight-bold">Unmatched Market Edge </h5>
                         </div>
                     </div>
                 </div>
@@ -111,6 +106,104 @@
         </div>
     <!--============== END TESTIMONIAL SECTION ===============-->
 
+<section class="market">
+ <div class="container">
+       <div class="row">
+                        <div class="col-md-12 text-center">
+                           <div class="section-title">
+                            <h2>Markets summery analysis</h2>
+                            </div>
+                        </div>
+       </div>
+  <div class="row">
+    <div class="col-sm">
+     <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Top Gainers</th>
+      <th scope="col">Price(KES)</th>
+      <th scope="col">Change(%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mark</td>
+      <td>4.50</td>
+      <td><span class="badge badge-success">+ 5.16 </span> <i style="color:green" class="fa fa-angle-up fa-lg"></i></td>
+    </tr>
+    <tr>
+      <td>Jacob</td>
+      <td>30.0</td>
+      <td><span class="badge badge-success">+ 5.16 </span> <i style="color:green" class="fa fa-angle-up fa-lg"></i></td>
+    </tr>
+    <tr>
+      <td>Larry</td>
+      <td>2.75</td>
+      <td><span class="badge badge-success">+ 5.16 </span> <i style="color:green" class="fa fa-angle-up fa-lg"></i></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div class="col-sm">
+      <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Lossers</th>
+      <th scope="col">Price(KES)</th>
+      <th scope="col">Change(%)</th>
+    </tr>
+  </thead>
+   <tbody>
+    <tr>
+      <td>Mark</td>
+      <td>3.23</td>
+      <td><span class="badge badge-danger">- 3.46 </span> <i style="color:red" class="fa fa-angle-down fa-lg"></i></td>
+    </tr>
+    <tr>
+      <td>Jacob</td>
+      <td>3.05</td>
+      <td><span class="badge badge-danger">- 4.16 </span> <i style="color:red" class="fa fa-angle-down fa-lg"></i></td>
+    </tr>
+    <tr>
+      <td>Larry</td>
+      <td>2.05</td>
+      <td><span class="badge badge-danger">- 5.16 </span> <i style="color:red" class="fa fa-angle-down fa-lg"></i></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div class="col-sm">
+     <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+  </div>
+</div>
+</section>
 
 
      <!--====== QUOTES AREA =====-->

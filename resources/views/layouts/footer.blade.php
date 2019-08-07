@@ -6,8 +6,8 @@
       <h2 class="ft-title">Follow us:</h2>
       <ul class="ft-social-list">
             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/corp_quantum"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/quantum-financials-consultancy-corp-55a5a2190/"><i class="fa fa-linkedin"></i></a></li>
     </ul>
     </div>
     <div class="ft-main-item">

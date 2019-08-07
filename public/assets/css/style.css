@@ -197,6 +197,76 @@ input:-webkit-autofill:focus {
              3 INTRO SECTION
 ==================================================*/
 
+.navbar-light {
+    padding: 1rem;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar-light .navbar-brand {
+    width: 100px;
+    max-height: 80px;
+
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: #000000;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.9;
+    margin: 0 0.5rem;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    color: #00bd2a;
+    font-size: 20px;
+    border-bottom: #00bd2a 2px solid;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 120px 100px 250px #000000 inset -120px -100px 250px #000000;
+}
+
+.carousel-item {
+    height: 90vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+
+}
+
+.carousel-caption {
+    bottom: 270px;
+    z-index: 3;
+}
+
+.carousel-caption h5 {
+    font-size: 48px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    font-weight: 800;
+    color: #f9842b;
+}
+
+.carousel-caption button a {
+    font-size: 28px;
+    width: 75%;
+    line-height: 1.9;
+    margin: auto;
+    font-weight: 500;
+    color: #00bd2a;
+}
+
+
 .welcome-area {
     background-size: cover;
     z-index: 1;
@@ -474,6 +544,35 @@ input:-webkit-autofill:focus {
 
 /* End of the Services */
 
+
+/* Marguess */
+
+marquee ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+marquee ul li {
+    margin-right: 2rem;
+    color: #00bd2a;
+}
+
+marquee ul li span {
+    color: #000000;
+}
+
+/* End of Marguess */
+
+
+/* Start of Market CSS */
+
+.market {
+    margin-bottom: 2rem;
+}
+
+/* End of Market CSS */
+
 /* About us */
 
 .section_all {
@@ -681,6 +780,35 @@ input:-webkit-autofill:focus {
 /* DESKTOP */
 
 @media only screen and (min-width: 768px) {
+    .carousel-item {
+        height: 0vh;
+    }
+
+    .carousel-caption {
+        bottom: 0;
+        z-index: 3;
+    }
+
+    .carousel-caption h5 {
+        font-size: 28px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 25px;
+        font-weight: 500;
+        color: #ffffff;
+
+    }
+
+    .carousel-caption button a {
+        font-size: 18px;
+        width: 75%;
+        line-height: 1.5;
+        margin: auto;
+        font-weight: 500;
+        color: #00bd2a;
+    }
+
+
     .mod-homepage-feature {
         margin-bottom: 100px;
     }
@@ -1243,7 +1371,7 @@ a:hover {
     flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 29.8125rem
+@media only screen and (min-width: 600px
 
     /* 477px */
 ) {
@@ -1256,6 +1384,37 @@ a:hover {
 
     /* 1240px */
 ) {
+    .carousel-item {
+        height: 90vh;
+        min-height: 300px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+
+    }
+
+    .carousel-caption {
+        bottom: 270px;
+        z-index: 3;
+    }
+
+    .carousel-caption h5 {
+        font-size: 48px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-top: 25px;
+        font-weight: 800;
+
+    }
+
+    .carousel-caption button a {
+        font-size: 28px;
+        width: 75%;
+        line-height: 1.9;
+        margin: auto;
+        font-weight: 500;
+        color: #00bd2a;
+    }
+
     .ft-main {
         justify-content: space-evenly;
     }

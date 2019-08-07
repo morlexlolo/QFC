@@ -1,22 +1,38 @@
 
-        <!--======= WELCOME AREA =======-->
-            <div id="home" class="welcome-area"  data-stellar-background-ratio="0.6" style="background-image:url({{url('images/test.jpg')}})
-            ">
-              <a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=CaG9u50QzcA&list=PLW16IA6QtwqHdzzRJC-SacVwtRSnJOcNs&index=20',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a>
-               <div class="welcome-table">
-                   <div class="welcome-cell">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
-                                    <div class="welcome-text">
-                                        <h2><span class="bold">Quantum Financial</span> Invest Today</h2>
-                                        <p>We are base in T-Mall Langata Road</p>
-                                        <a class="scroll-btn btn theme-color" href="#about">More About us</a>
-                                    </div>
-                                </div>
-                           </div><!--/.row-->
-                        </div><!--/.container-->
-                    </div>
-                </div>
-            </div>
-            <!--===== END WELCOME AREA =====-->
+<div class="bd-example">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    </ol>
+    <div class="carousel-inner">
+        <marquee>
+            <ul>
+                <li> JP/KES: <span>Buy:100</span>,<span>Sell:1.29.50</span></li>
+                <li> US/KES: <span>Buy:100</span>,<span>Sell:103.2</span></li>
+                <li> EU/KES: <span>Buy:100</span>,<span>Sell:106.5</span></li>
+                <li> JP/KES: <span>Buy:1000</span>,<span>Sell:1.29.50</span></li>
+                <li> JP/KES: <span>Buy:1000</span>,<span>Sell:1.29.50</span></li>
+            </ul>
+       </marquee>
+     @forelse ($sliders as $key => $slider)
+            <div class="carousel-item {{$key == 0 ? 'active' : '' }}">
+        <img src="{{ Voyager::image( $slider->image)}}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>{{ $slider->title }}</h5>
+           <button type="button" class="btn  btn-outline-light"><a href="{{ route('services.show',$slider->slug) }}">Read More</a></button>
+        </div>
+      </div>
+     @empty
+
+     @endforelse
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>

@@ -14,9 +14,8 @@
         <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png">
 
         <!--==== CSS asset ====-->
-        <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/css/YTPlayer.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/css/animate.min.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/css/owl.carousel.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/css/magnific-popup.css') }}" rel="stylesheet">
@@ -25,7 +24,7 @@
         <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/theme/blue.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
 
@@ -69,15 +68,16 @@
        </script>
         <script src="{{ asset('assets/js/wow-1.3.0.min.js') }}"></script>
         <script src="{{ asset('assets/js/jquery.stellar.min.js') }}"></script>
-        <script src="{{ asset('assets/js/jquery.mb.YTPlayer.min.js') }}"></script>
-        <script type="text/javascript">
-            $('.player').mb_YTPlayer();
-        </script>
+
+
         <script src="{{ asset('assets/js/jquery.mixitup.js') }}"></script>
         <script src="{{ asset('assets/js/validator.min.js') }}"></script>
         <script src="{{ asset('assets/js/plugins.js') }}"></script>
         <script src="{{ asset('assets/js/contact.js') }}"></script>
         <script src="{{ asset('assets/js/main.js') }}"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 
 </body>
