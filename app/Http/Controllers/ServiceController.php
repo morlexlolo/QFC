@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Service;
 use Illuminate\Http\Request;
 use SEOMeta;
+use App\ServiceCategory;
 
 class ServiceController extends Controller
 {
@@ -22,6 +23,13 @@ class ServiceController extends Controller
         return view('services.index', compact('services'));
     }
 
+    public function cat($slug)
+    {
+        $services = ServiceCategory::where('slug', $slug)->first()->services()->get();
+        $serviceCatItem = ServiceCategory::where('slug', $slug)->first()->services()->take(1)->get();
+        $servicesList = ServiceCategory::where('slug', $slug)->first()->services()->get();
+        return view('services.cat', compact('services', 'serviceCatItem', 'servicesList'));
+    }
 
     /**
      * Display the specified resource.
@@ -33,10 +41,12 @@ class ServiceController extends Controller
     {
         //
         $service = Service::where('slug', $slug)->firstOrFail();
+        $services = Service::orderBy('id', 'asc')->get();
         SEOMeta::setTitle($service->title);
         SEOMeta::setDescription($service->conent);
         return view('services.show')->with([
             'service' => $service,
+            'services' => $services,
         ]);
     }
 }

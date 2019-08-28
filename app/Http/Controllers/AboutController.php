@@ -13,7 +13,7 @@ class AboutController extends Controller
     {
         SEOMeta::setTitle('About-QFC');
         SEOMeta::setDescription('About Quntum financial corp');
-        $abouts   = About::orderBy('title', 'asc')->get();
+        $abouts   = About::orderBy('title', 'asc')->take(1)->get();
         return view('about.index', compact('abouts'));
     }
 }

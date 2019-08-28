@@ -5,7 +5,7 @@
 
 
 <!--======================Cover Header==============-->
-<div class="cover" style="background-image: url('http://rel.resultspw.com/images/medium-hero.jpg');">
+<div class="cover" style="background-image: url('/images/test.jpg');">
     <div class="cover-content">
         <h3 class="title">
             Gallery

@@ -16,7 +16,7 @@ class CreateGainersTable extends Migration
         Schema::create('gainers', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->integer('price');
+            $table->decimal('price');
             $table->decimal('percentage');
             $table->timestamps();
         });

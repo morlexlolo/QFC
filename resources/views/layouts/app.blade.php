@@ -11,11 +11,10 @@
 	    <!-- MINIFIED -->
 	    {!! SEOMeta::generate() !!}
         <!-- Favicon -->
-        <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png">
+        <link rel="shortcut icon" href="{{ asset('assets/images/logo.jpg') }}" type="image/png">
 
         <!--==== CSS asset ====-->
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/css/animate.min.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/css/owl.carousel.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/css/magnific-popup.css') }}" rel="stylesheet">
@@ -68,8 +67,7 @@
        </script>
         <script src="{{ asset('assets/js/wow-1.3.0.min.js') }}"></script>
         <script src="{{ asset('assets/js/jquery.stellar.min.js') }}"></script>
-
-
+        <script src="https://kit.fontawesome.com/4b42b62e69.js"></script>
         <script src="{{ asset('assets/js/jquery.mixitup.js') }}"></script>
         <script src="{{ asset('assets/js/validator.min.js') }}"></script>
         <script src="{{ asset('assets/js/plugins.js') }}"></script>

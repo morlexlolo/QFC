@@ -28,9 +28,15 @@ Route::get('/services', 'ServiceController@index')->name('services.index');
 
 Route::get('/services/{slug}', 'ServiceController@show')->name('services.show');
 
+Route::get('/services/category/{slug}', 'ServiceController@cat')->name('services.cat');
+
 Route::get('/media', 'GalleryController@index')->name('media');
 
 Route::get('/about', 'AboutController@index')->name('about');
+
+
+Route::get('/news', 'NewsController@index')->name('news.index');
+Route::get('/news/{slug}', 'NewsController@show')->name('news.show');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

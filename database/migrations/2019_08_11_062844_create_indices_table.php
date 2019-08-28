@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateInternationalMarketsTable extends Migration
+class CreateIndicesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateInternationalMarketsTable extends Migration
      */
     public function up()
     {
-        Schema::create('international_markets', function (Blueprint $table) {
+        Schema::create('indices', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
             $table->decimal('price');
             $table->decimal('percentage');
+            $table->string('region');
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateInternationalMarketsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('international_markets');
+        Schema::dropIfExists('indices');
     }
 }

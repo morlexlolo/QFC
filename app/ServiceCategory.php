@@ -5,12 +5,13 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use TCG\Voyager\Traits\Resizable;
 
-class Service extends Model
+class ServiceCategory extends Model
 {
+    //
     use Resizable;
     protected $guarded = [];
-    public function cat()
+    public function services()
     {
-        return $this->belongsTo('App\ServiceCategory');
+        return $this->hasMany('App\Service');
     }
 }

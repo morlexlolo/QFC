@@ -5,13 +5,13 @@
 
 
 <!--======================Cover Header==============-->
-<div class="cover" style="background-image: url('http://rel.resultspw.com/images/medium-hero.jpg');">
+{{--  <div class="cover" style="background-image: url('http://rel.resultspw.com/images/medium-hero.jpg');">
     <div class="cover-content">
         <h3 class="title">
             Contact us
         </h3>
     </div>
-</div>
+</div>  --}}
 <!--======================End of Cover Header==============-->
          <!--================ CONTACT INFO SECTION =================-->
         <section  class="contact-info-section section-padding">

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateInternationalMarketsTable extends Migration
+class CreateServiceCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateInternationalMarketsTable extends Migration
      */
     public function up()
     {
-        Schema::create('international_markets', function (Blueprint $table) {
+        Schema::create('service_categories', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->decimal('price');
-            $table->decimal('percentage');
+            $table->string('title');
+            $table->string('image')->nullable();
+            $table->string('slug');
+            $table->text('description');
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateInternationalMarketsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('international_markets');
+        Schema::dropIfExists('service_categories');
     }
 }

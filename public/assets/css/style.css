@@ -32,12 +32,14 @@ NOTE: This is main stylesheet of the template.
 ===================================================*/
 
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 /*================================================
              0 BASE CSS
 ==================================================*/
 a {
     text-decoration: none;
+    color: #000;
 }
 
 a:focus {
@@ -56,7 +58,7 @@ h4,
 h5,
 h6 {
     margin: 0 0 15px;
-    color: #0f75bd;
+    color: #000000;
 }
 
 p {
@@ -69,11 +71,10 @@ body {
 }
 
 body {
-    font-size: 16px;
-    background: #f9f9f9;
     font-family: "Nunito", sans-serif;
     font-weight: normal;
     line-height: 24px;
+    background: #f9f9f9;
 }
 
 a {
@@ -203,71 +204,62 @@ input:-webkit-autofill:focus {
     transition: all 0.4s ease-in-out;
 }
 
+.nav_custom {
+    background: #ffffff;
+}
+
 .navbar-light .navbar-brand img {
-
-    max-height: 50px;
-    object-fit: cover;
-
+    height: 80px;
+    padding-left: 1rem;
 }
 
 .navbar-light .navbar-nav .nav-item .nav-link {
     color: #000000;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.9;
-    margin: 0 0.5rem;
+    margin: 0 2rem;
+    border-bottom: transparent 2px solid;
 }
 
 .navbar-light .navbar-nav .nav-item .nav-link:hover {
     color: #00bd2a;
-    font-size: 20px;
     border-bottom: #00bd2a 2px solid;
+    background: #f7f7f7;
+    border-radius: 50%;
 }
 
-.carousel-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.6);
-    box-shadow: inset 120px 100px 250px #000000 inset -120px -100px 250px #000000;
+/* Category Style */
+.category {
+    padding: 2rem;
+    margin-top: -25px;
 }
 
-.carousel-item {
-    height: 90vh;
-    min-height: 300px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-
+.card {
+    margin-top: -25px;
 }
 
-.carousel-caption {
-    bottom: 270px;
-    z-index: 3;
+p .card-text {
+    color: #666666;
 }
 
-.carousel-caption h5 {
-    font-size: 48px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-top: 25px;
-    font-weight: 800;
-    color: #f9842b;
-}
-
-.carousel-caption button a {
-    font-size: 28px;
-    width: 75%;
-    line-height: 1.9;
-    margin: auto;
+.card .card-body a h2 {
+    display: flex;
+    text-align: center;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
     font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.card .card-body a h2:hover {
     color: #00bd2a;
 }
 
-
+/* End of the Category style */
 .welcome-area {
     background-size: cover;
     z-index: 1;
@@ -287,6 +279,10 @@ input:-webkit-autofill:focus {
     opacity: 0.6;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
     z-index: -1;
+}
+
+.sign {
+    font-weight: 900;
 }
 
 .cover {
@@ -492,8 +488,6 @@ input:-webkit-autofill:focus {
     transition: all 0.5s ease-in-out;
 }
 
-
-
 .complete_project_section {
     padding: 95px 0px 100px;
     overflow: hidden;
@@ -544,7 +538,6 @@ input:-webkit-autofill:focus {
 }
 
 .single_bloG_item_content h3 a {
-
     text-decoration: none;
 }
 
@@ -553,7 +546,6 @@ input:-webkit-autofill:focus {
 }
 
 /* End of the Services */
-
 
 /* Marguess */
 
@@ -574,15 +566,123 @@ marquee ul li span {
 
 /* End of Marguess */
 
-
 /* Start of Market CSS */
 
 .market {
-    margin-bottom: 2rem;
+    padding: 2rem;
+    /* background: #ffffff; */
+}
+
+.market .container {
+    font-size: 18px;
+    color: #555555;
+    font-weight: 600;
 }
 
 /* End of Market CSS */
 
+/* News styles */
+.news {
+    padding: 4rem 0;
+    background: linear-gradient(45deg,
+            rgb(98, 31, 155) 0%,
+            rgb(98, 31, 155) 24%,
+            rgb(90, 59, 158) 24%,
+            rgb(90, 59, 158) 25%,
+            rgb(82, 86, 161) 25%,
+            rgb(82, 86, 161) 27%,
+            rgb(74, 114, 164) 27%,
+            rgb(74, 114, 164) 36%,
+            rgb(66, 141, 167) 36%,
+            rgb(66, 141, 167) 73%,
+            rgb(58, 169, 170) 73%,
+            rgb(58, 169, 170) 75%,
+            rgb(50, 196, 173) 75%,
+            rgb(50, 196, 173) 80%,
+            rgb(42, 224, 176) 80%,
+            rgb(42, 224, 176) 100%);
+}
+
+.article_card {
+    border: 0px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.article_card img {
+    transition: all 0.3s ease;
+}
+
+.article_card a:hover {
+    text-decoration: none;
+}
+
+.article_card .article_date {
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    text-align: center;
+    background-color: #276fb3;
+    color: white;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 2px 4px 5px #00000057;
+}
+
+.article_card:hover .article_day {
+    background-color: #20578c;
+}
+
+.article_card:hover .article_month {
+    background-color: #276fb3;
+}
+
+.article_card:hover .article_date {
+    box-shadow: 5px 4px 2px -1px rgba(0, 0, 0, 0.32);
+}
+
+.article_card .article_day {
+    display: block;
+    padding: 2px 13px;
+    transition: all 0.3s ease;
+}
+
+.article_card .article_month {
+    background-color: #20578c;
+    padding: 2px 12px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.article_card a .card-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 1rem;
+    margin-bottom: 15px;
+    padding: 0 0.5rem;
+    color: #000000;
+}
+
+@media (max-width: 845px) {
+    .article_card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .article_card .article_date {
+        font-size: 16px;
+    }
+
+    .article_card img {
+        width: 100%;
+    }
+}
+
+/* End of news style */
 /* About us */
 
 .section_all {
@@ -805,8 +905,7 @@ marquee ul li span {
         text-transform: uppercase;
         margin-top: 25px;
         font-weight: 500;
-        color: #ffffff;
-
+        color: #364395;
     }
 
     .carousel-caption button a {
@@ -817,7 +916,6 @@ marquee ul li span {
         font-weight: 500;
         color: #00bd2a;
     }
-
 
     .mod-homepage-feature {
         margin-bottom: 100px;
@@ -875,8 +973,6 @@ marquee ul li span {
     vertical-align: middle;
 }
 
-.welcome-text {}
-
 .welcome-text h2 {
     font-size: 48px;
     color: #fff;
@@ -905,7 +1001,6 @@ marquee ul li span {
 /*================================================
              4 ABOUT SECTION
 ==================================================*/
-.about-section {}
 
 .author-image {
     text-align: center;
@@ -1018,8 +1113,6 @@ a.btn:focus {
     padding: 60px 20px;
 }
 
-.single-service:hover {}
-
 /*================================================
             6 QUOTES AREA
 ==================================================*/
@@ -1082,12 +1175,6 @@ ul.work li {
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-
-ul.work li.active.theme-color {}
-
-ul.work li.theme-color:hover {}
-
-ul.work li.active {}
 
 .single-work {
     position: relative;
@@ -1169,13 +1256,11 @@ ul.work li.active {}
     margin-right: 10px;
 }
 
-.hover-content a:hover {}
-
 /*================================================
             8 TESTIMONIAL SECTION
 ==================================================*/
 .testimonial-section .section-title h2,
-testimonial-section .section-title p {}
+.testimonial-section .section-title p {}
 
 .testimonial-area {}
 
@@ -1289,6 +1374,12 @@ fieldset[disabled] .btn {
     margin-left: 40px;
 }
 
+.full-adress h2 {
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+
+}
+
 .contact-padding.col-md-12 {
     padding: 15px;
     background: #fff;
@@ -1347,7 +1438,12 @@ ul {
 }
 
 footer {
-    background-color: #000000;
+    background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #bbb;
     line-height: 1.5;
 }
@@ -1364,7 +1460,8 @@ a:hover {
 
 .ft-title {
     color: #1075bd;
-    font-size: 16px;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
     padding-bottom: 0.625rem;
 }
 
@@ -1399,7 +1496,6 @@ a:hover {
         min-height: 300px;
         background: no-repeat center center scroll;
         -webkit-background-size: cover;
-
     }
 
     .carousel-caption {
@@ -1413,7 +1509,6 @@ a:hover {
         text-transform: uppercase;
         margin-top: 25px;
         font-weight: 800;
-
     }
 
     .carousel-caption button a {

@@ -5,16 +5,16 @@
     <div class="ft-main-item">
       <h2 class="ft-title">Follow us:</h2>
       <ul class="ft-social-list">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/corp_quantum"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/quantum-financials-consultancy-corp-55a5a2190/"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.facebook.com/QFCltd/?ref=search&__tn__=%2Cd%2CP-R&eid=ARBxtEbGgMQDTzOphQQva3Dx4U_T0a9EuR1i-mTEqfSKUAq8OtFJy8sTzC2JvfwHuDCn6CNibYDIpHZ3"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/corp_quantum"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/quantum-financials-consultancy-corp-55a5a2190/"><i class="fab fa-linkedin"></i></a></li>
     </ul>
     </div>
     <div class="ft-main-item">
       <h2 class="ft-title">Services</h2>
       <ul>
 
-        @forelse ($services as $item)
+        @forelse ($servicesfooter as $item)
              <li><a href="{{ route('services.show',$item->slug) }}">{{ $item->title }}</a></li>
         @empty
             <li><a href="#">Docs</a></li>

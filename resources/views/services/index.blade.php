@@ -2,13 +2,13 @@
 @section('content')
 @include('layouts.header')
 <!--======================Cover Header==============-->
-<div class="cover" style="background-image: url('http://rel.resultspw.com/images/medium-hero.jpg');">
+{{--  <div class="cover" style="background-image: url('http://rel.resultspw.com/images/medium-hero.jpg');">
     <div class="cover-content">
         <h3 class="title">
             Services
         </h3>
     </div>
-</div>
+</div>  --}}
 <!--======================End of Cover Header==============-->
 
 
@@ -31,7 +31,7 @@
                             <div class="">
                                 <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
                                     <div class="single_blog_item_div image_fulwidth text-center">
-                                        <a href="{{ route('services.show',$service->slug) }}"><img alt="{{ $service->title }}" src="{{ Voyager::image( $service->image)}}"></a>
+                                        <a href="{{ route('services.show',$service->slug) }}"><img alt="{{ $service->title }}" src="{{Voyager::image($service->thumbnail('cropped'))}}"></a>
                                         <div class="single_bloG_item_content para_default">
                                             <a href="{{ route('services.show',$service->slug) }}"><h3>{{ $service->title }}</h3></a>
                                             <p> {!!  substr(strip_tags($service->content),0,120) !!}...</p>

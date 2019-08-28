@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="col-md-8 col-sm-12 col-xs-12">
-                      <p>{!! $item->content !!}</p>
+                      <p>{!! $service->content !!}</p>
                      </div>
                  </div><!--/.row-->
             </div><!--/.container-->

@@ -16,7 +16,7 @@ class CreateLoosersTable extends Migration
         Schema::create('loosers', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->integer('price');
+            $table->decimal('price');
             $table->decimal('percentage');
             $table->timestamps();
         });

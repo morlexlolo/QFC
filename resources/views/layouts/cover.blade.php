@@ -5,16 +5,6 @@
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
     </ol>
     <div class="carousel-inner">
-        <marquee scrollamount="10">
-            <ul>
-               @forelse ($markets as $market)
-                <li>{{ $market->name1 }} / {{ $market->name2 }}: <span>Buy:{{ $market->buy }}</span> , <span>Sell:{{ $market->sell }}</span></li>
-               @empty
-                 <li>no record...</li>
-               @endforelse
-
-            </ul>
-       </marquee>
      @forelse ($sliders as $key => $slider)
             <div class="carousel-item {{$key == 0 ? 'active' : '' }}">
         <img src="{{ Voyager::image( $slider->image)}}" class="d-block w-100" alt="...">
