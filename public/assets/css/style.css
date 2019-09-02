@@ -235,6 +235,23 @@ input:-webkit-autofill:focus {
     margin-top: -25px;
 }
 
+/*a {
+    color: #0254EB
+}
+a:visited {
+    color: #0254EB
+}
+.comment {
+    width: 400px;
+    background-color: #f0f0f0;
+    margin: 10px;
+}
+a.morelink {
+    text-decoration:none;
+    outline: none;
+}
+*/
+
 .card {
     margin-top: -25px;
 }

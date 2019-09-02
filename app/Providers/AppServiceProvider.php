@@ -31,11 +31,15 @@ class AppServiceProvider extends ServiceProvider
         view()->composer('*', function ($view) {
             $sliders = Service::orderBy('id', 'DESC')->get();
             $markets = Market::orderBy('id', 'ASC')->get();
-            $servicesfooter = Service::get();
+
+            $servicesfooterfirstcolumn = Service::orderBy('id', 'asc')->take(7)->get();
+            $servicesfootersecondcolumn = Service::orderBy('id', 'desc')->take(7)->get();
+
             $servicesCat = ServiceCategory::get();
             $news = Post::orderBy('id', 'asc')->get();
             //Registering Global variable
-            $view->with('servicesfooter', $servicesfooter);
+            $view->with('servicesfooterfirstcolumn', $servicesfooterfirstcolumn);
+            $view->with('servicesfootersecondcolumn', $servicesfootersecondcolumn);
             $view->with('sliders', $sliders);
             $view->with('markets', $markets);
             $view->with('servicesCat', $servicesCat);

@@ -20,15 +20,16 @@
 <section class="category">
     <div class="row">
        @forelse ($servicesCat as $item)
-            <div class="col-sm">
-            <div class="card ">
+          <div class="col-sm">
+            <div class="card">
                 <img class="img-fluid rounded mx-auto" src="{{Voyager::image($item->thumbnail('cropped'))}}"
                     alt="category">
                 <div class="card-body">
                     <a href="{{ route('services.cat',$item->slug) }}">
                         <h2>{{ $item->title }}</h2>
                     </a>
-                    <p>{!! $item->description !!}<a href="{{ route('services.cat',$item->slug) }}">Read More <i class="fa fa-chevron-right"></i></a></p>
+                    <p>{!! $item->description !!}</p>
+                    <a href="{{ route('services.cat',$item->slug) }}" role="button">Read more »</a></p>
                 </div>
             </div>
         </div>
@@ -47,7 +48,7 @@
                     <table class="table table-striped">
                         <thead class="thead-dark">
                             <tr>
-                                <th scope="col">Top Gainers</th>
+                                <th scope="col">Top&nbsp;Gainers</th>
                                 <th scope="col">Price(KES)</th>
                                 <th scope="col">Change(%)</th>
                             </tr>

@@ -40,8 +40,17 @@ class ServiceController extends Controller
     public function show($slug)
     {
         //
+
+       $category = Service::select('service_category_id')->where('slug', $slug)->get();
+      
+         foreach ($category as $c) {
+              // code
+              $cc = $c->service_category_id;
+            }
+            
+
         $service = Service::where('slug', $slug)->firstOrFail();
-        $services = Service::orderBy('id', 'asc')->get();
+        $services = Service::where('service_category_id', $cc)->orderBy('id', 'asc')->get();
         SEOMeta::setTitle($service->title);
         SEOMeta::setDescription($service->conent);
         return view('services.show')->with([
